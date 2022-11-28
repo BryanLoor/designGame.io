@@ -1119,3 +1119,13 @@ img.img-idea{
   width: 400px;
   height: 600px;
 }
+
+.video{
+  width: 50%;
+  height: 800px;
+  transform: rotate(270deg);
+}
+
+.texto-descripcion{
+  text-align: justify;
+}
