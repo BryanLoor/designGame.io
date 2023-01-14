@@ -89,6 +89,25 @@
              </span>
            </a>
          </li>
+        <li>
+           <a href="#1iteracionGame" class="nav-link scrollto"><i class="bi bi-calendar3-week-fill"></i>
+             <span>
+                Documentación del proyecto
+             </span>
+           </a>
+         </li>
+         <li>
+            <a href="./assets/files/Cartas-de-Juego-final.pdf" download="Cartas de Juego">
+              <i class="bi bi-git"></i>
+              <span>Última versión</span>
+            </a>
+         </li>
+         <li>
+    <a href="./assets/files/Manual-final.pdf" download="Cartas de Juego">
+      <i class="bi bi-book-half"></i>
+      <span>Manual</span>
+    </a>
+         </li>
 
          <!--i><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li-->
@@ -1333,6 +1352,66 @@
     </a>
 
 </div>
+
+<section id="1iteracionGame">
+  <div class="container">
+    <div class="section-title">
+      <h2>Diagrama de componentes</h2>
+      <p class="text-descripcion">La creación de un diagrama de componentes es esencial para la planificación y desarrollo de un juego. Este diagrama permite visualizar todos los elementos necesarios para la elaboración del juego y cómo estos se relacionan entre sí. Además, se ha implementado el uso de colores para identificar la responsabilidad de cada miembro del equipo en cada componente. Con esto, se puede ver claramente qué es necesario para continuar o implementar el siguiente componente.</p>
+    </div>
+    <div class="text-center m-0 p-0">
+      <img style="width:70vw" src="assets/img/planificacion/juegos.png" alt="Diagrama de modulos">
+    </div>
+    <div class="row">
+      <ul>
+        <li>
+          <p><strong>Manejador de sala:</strong>se encarga de manejar el tema de Material UI y las rutas del juego.</p>
+        </li>
+        <li>
+          <p><strong>Generador de código:</strong>genera la sala de juego, se comunica con el backend y maneja la interacción entre el backend y el frontend.</p>
+        </li>
+        <li>
+          <p><strong>Sala de espera:</strong>almacena la información de la sala y los jugadores, llama a la lógica del juego y maneja las variables necesarias.</p>
+        </li>
+        <li>
+          <p><strong>Roles:</strong>contiene toda la información relacionada con los roles existentes en el juego (acusado o juez)</p>
+        </li>
+        <li>
+          <p><strong>Juego:</strong>es la ventana principal del juego donde se unirán todos los componentes.</p>
+        </li>
+        <li>
+          <p><strong>Manejador de tiempos:</strong>verifica el tiempo de cada pregunta y el tiempo total del juego para finalizarlo.</p>
+        </li>
+        <li>
+          <p><strong>Validador ganador:</strong>muestra al ganador del juego una vez finalizado el tiempo o las cartas.</p>
+        </li>
+        <li>
+          <p><strong>Selección de respuesta (acusado):</strong>almacena la respuesta del acusado a la pregunta planteada en el juego.</p>
+        </li>
+        <li>
+          <p><strong>Votación (jurado):</strong>almacena las respuestas del jurado a la pregunta planteada en el juego.</p>
+        </li>
+        <li>
+          <p><strong>Respuesta:</strong>recibe ambas respuestas, tanto la del acusado como la del jurado.</p>
+        </li>
+        <li>
+          <p><strong>Manejador de puntajes:</strong>da el puntaje al acusado si acierta la respuesta y almacena esta información para su uso futuro.</p>
+        </li>
+        <li>
+          <p><strong>Cartas:</strong>contiene todas las cartas utilizadas en el juego, tanto las cartas especiales como las normales.</p>
+        </li>
+        <li>
+          <p><strong>Chat:</strong>se encarga de la creación, envío y recepción de los mensajes de cada jugador.</p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p>Cada uno de estos componentes juega un papel importante en el funcionamiento del juego y su correcta implementación es esencial para garantizar una experiencia de juego satisfactoria para los usuarios. Hasta el momento, se ha implementado la funcionalidad para que un jugador pueda crear una sala y otros jugadores puedan unirse a ella. También se ha agregado la capacidad de visualizar la información de una carta al hacer clic en ella, lo cual permite al jugador elegir la opción que mejor se adapte a su estrategia. Además, se ha añadido sonido de fondo al juego. Se espera que, para la fecha de entrega, todos estos componentes estén completamente funcionales y se puedan recibir retroalimentación del juego para realizar las mejoras necesarias.
+</p>
+  </div>
+  </div>
+
+</section>
 
   </main><!-- End #main -->
 
